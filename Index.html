@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SENAIGRAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+    <div class="logo">
+
+        <img src="Imgs/senaigram-logo.jpg" alt="logo do senaigram">
+
+    </div>
+
+    <br>
+    <div class="ehtop">
+
+
+        <div class="foto">
+            <img id="imagem" src="Imgs/preset.jpg" alt="Imagem">
+        </div>
+        <br>
+        <div class="filtros">
+            <div class="filtrinho1">
+                <h3>Grayscale</h3>
+                <input type="range" value="0" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'grayscale')">
+                <h3>Blur</h3>
+                <input type="range" value="0" step="1" max="100" min="0" onchange="aplicaFiltro(this, 'blur', 'px')">
+                <h3>Opacity</h3>
+                <input type="range" value="1" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'opacity')">
+            </div>
+            <div class="filtrinho2">
+                <h3>Sepia</h3>
+                <input type="range" value="0" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'sepia')">
+                <h3>Saturate</h3>
+                <input type="range" value="1" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'saturate')">
+                <h3>Hue-rotate</h3>
+                <input type="range" value="0" step="1" max="360" min="0" onchange="aplicaFiltro(this, 'hue-rotate')">
+            </div>
+            <div class="filtrinho3">
+                <h3>Invert</h3>
+                <input type="range" value="0" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'invert')">
+                <h3>Brightness</h3>
+                <input type="range" value="1" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'brightness')">
+                <h3>Contrast</h3>
+                <input type="range" value="1" step="0.01" max="1" min="0" onchange="aplicaFiltro(this, 'contrast')">
+            </div>
+        </div>
+
+
+        <br>
+    </div>
+
+
+
+    <div class="labelzinha">
+        <label class="custom-file-input">
+            <input type="file" id="arthurzinho">
+        </label>
+    </div>
+
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
